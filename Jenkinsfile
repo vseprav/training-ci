@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Git Checkout stage') {
+    stage('Git Hello') {
       steps {
-        sh 'echo "Hello"'
+        sh 'echo "Hello World"'
       }
     }
   }
