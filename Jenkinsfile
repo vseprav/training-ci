@@ -13,7 +13,8 @@ pipeline {
     }
     stage('Run App') {
       steps {
-        sh 'docker-compose up -d --build'
+        sh '''cd flask-app;
+docker-compose up -d --build'''
       }
     }
   }
