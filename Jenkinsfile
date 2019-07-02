@@ -11,5 +11,10 @@ pipeline {
         sh 'echo "Hello World"'
       }
     }
+    stage('Run App') {
+      steps {
+        sh 'docker-compose up -d --build'
+      }
+    }
   }
 }
