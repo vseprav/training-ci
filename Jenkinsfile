@@ -20,6 +20,7 @@ docker-compose down'''
     stage('Run App') {
       steps {
         sh '''cd flask-app;
+docker-compose down
 docker-compose up -d --build'''
       }
     }
